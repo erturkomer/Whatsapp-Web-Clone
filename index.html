@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/desktop.css" media="screen and (min-width: 1920px)">
+    <link rel="stylesheet" href="style/small-pc.css" media="screen and (min-width: 1200px) and (max-width: 1919px)">
+    <link rel="stylesheet" href="style/tablet.css" media="screen and (min-width: 768px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="assets/images/Background/whatsapp.png">
+    <title>Whatsapp Clone (organized)</title>
+
+</head>
+
+<body>
+
+    <div class="window">
+        <div class="leftSide">
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <div class="img">
+                        <img src="assets/images/Profile/images.png" alt="img bulunamadi.">
+                    </div>
+                    <div class="navbar-left-icon">
+                        <span class="remove btn material-symbols-outlined">group</span>
+                        <span class="remove btn material-symbols-outlined">check_circle</span>
+                        <span class="remove btn material-symbols-outlined">add_comment</span>
+                        <span class="btn material-symbols-outlined">menu</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-container">
+                <div class="search">
+                    <span class="material-symbols-outlined" id="search-icon" onclick="toggleFocus()">search</span>
+                    <input class="search-box" id="search-box" type="search"
+                        placeholder="Aratın veya yeni sohbet başlatın" value="">
+                </div>
+                <span class="filter-icon material-symbols-outlined">
+                    filter_list
+                </span>
+            </div>
+            <div class="user-list">
+
+                <div class="user-container active">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/unityverse.jpg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Web Development
+                                (14.30-18.30)</span>
+                            <span style="color: gray;">Burak Çekem: Hocam perşembe günü 9 gibi ev...<span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">23.52</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/elonmusk.jpeg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Elon Musk</span>
+                            <span style="color: gray;">Bir şey yeterince önemli olduğunda, olasılıklar...</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">21.42</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/jefbezos.jfif" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Jeff Bezos</span>
+                            <span style="color: gray;">Yılda deney sayısını iki katına çıkarırsanız, zekanızı...</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">20.38</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/warren_buffet.jpg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Warren Buffet</span>
+                            <span style="color: gray;">Risk, ne yaptığınızı bilmediğiniz zaman geçerlidir.</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">20.06</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/mark-zuc.jpg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Mark Zuckerberg</span>
+                            <span style="color: gray;">Hızlı hareket edin ve bir şeyleri bozun. Bir şeyleri bo..</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">19.13</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/Billgates.jfif" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Bill Gates</span>
+                            <span style="color: gray;">Bilgisayar daha önce var olmayan sorunları çözmek...</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">18.54</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/stevejobs.png" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Steve Jobs</span>
+                            <span style="color: gray;">Dün için üzülmek yerine gelin, geleceği inşa edelim.</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">18.16</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/michael-bloomberg.jpg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Michael Bloomberg</span>
+                            <span style="color: gray;">Orada oturup her şey için endişelenemezsin.</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">15.57</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/waltdisney.jfif" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Walt Disney</span>
+                            <span style="color: gray;">Hayal edebilirseniz yapabilirsiniz.</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">15.57</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/Albert-Einstein.jpg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Albert Einstein</span>
+                            <span style="color: gray;">Bu dünyada beni birkaç kişi anladı, onlar da...</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">15.57</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/nikola tesla.jpeg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Nikola Tesla</span>
+                            <span style="color: gray;">Fikrimi çalmalarını değil kendi fikirlerinin olmaması...</span>
+                        </div>
+                    </div>
+                    <span  class="user-time" style="color: gray;">15.57</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/leonardo.jfif" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Leonardo Dicaprio</span>
+                            <span style="color: gray;">Zor zamanlar için müteşekkir olun, çünkü onlar sizi...</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">15.45</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+                <div class="user-container">
+                    <div style="display: flex; align-items: center;">
+                        <div class="user-list-img">
+                            <img src="assets/images/Profile/acunılıcalı.jpg" alt="img bulunamadi.">
+                        </div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span style="color: rgba(0, 0, 0, 0.747);">Acun Ilıcalı</span>
+                            <span style="color: gray;">İyi insanın değerini kötü insan belli eder.</span>
+                        </div>
+                    </div>
+                    <span class="user-time" style="color: gray;">15.32</span>
+                </div>
+                <div style="background-color: rgba(31, 31, 31, 0.096); width: 100%; height: 1px;"></div>
+
+
+
+            </div>
+        </div>
+
+        <div class="rightSide">
+            <nav class="navbar">
+                <div class="img">
+                    <img src="assets/images/Profile/unityverse.jpg" alt="img bulunamadi">
+                </div>
+
+                <div class="navbar-right" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="user-group-top">
+                        <span>Web Development (14.30-18.30)</span>
+                        <span class="group" style="color: gray; cursor: pointer;">Grup bilgisi için tıklayın.</span>
+                    </div>
+
+                    <div class="user-group-icon" style="display: flex; align-items: center;">
+                        <span class="btn material-symbols-outlined">
+                            video_call
+                        </span>
+                        <span class="btn material-symbols-outlined">
+                            search
+                        </span>
+
+                        <span class="btn material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="chat">
+
+            </div>
+            <div class="rightSide-bottom" style="display: flex;">
+                <div class="writing-container"
+                    style="display: flex; align-items: center; justify-content: space-evenly;">
+                    <span class="btn material-symbols-outlined">
+                        mood
+                    </span>
+                    <span class="plus btn material-symbols-outlined">
+                        add
+                    </span>
+                    <input class="write" type="search" placeholder="Bir mesaj yazın">
+                    <span class="send btn material-symbols-outlined">
+                        mic
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
