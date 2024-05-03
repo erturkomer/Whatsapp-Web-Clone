@@ -1,4 +1,4 @@
 #whatsapp web clone
-[NETLIFY]https://whatsappwebcloneresponsive.netlify.app
+[NETLIFY] : https://whatsappwebcloneresponsive.netlify.app
 
 ![whatsapwebclone](whatsappweb.png)
