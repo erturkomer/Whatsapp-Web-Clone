@@ -1,2 +1,2 @@
 #whatsapp web clone
-![Uploading whatsappweb.png…]()
+![Açıklama](https://ibb.co/gVgdZKJ)
